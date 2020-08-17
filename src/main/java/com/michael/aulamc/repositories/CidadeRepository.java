@@ -5,8 +5,6 @@ import org.springframework.stereotype.Repository;
 
 import com.michael.aulamc.domain.Cidade;
 
-
-
 @Repository
 public interface CidadeRepository extends JpaRepository<Cidade, Integer> {
 

@@ -26,7 +26,7 @@ public class Categoria implements Serializable {
 	
 	@JsonManagedReference
 	@ManyToMany(mappedBy="categorias")
-	private List<Produto> produtos = new ArrayList<Produto>();
+	private List<Produto> produto = new ArrayList<Produto>();
  
  public Categoria(){
 	 
@@ -56,10 +56,10 @@ public void setNome(String nome) {
 }
 
  public List<Produto> getProdutos() {
-	return produtos;
+	return produto;
 }
 public void setProdutos(List<Produto> produtos) {
-	this.produtos = produtos;
+	this.produto = produtos;
 }
 // gerando HashCode equals ou seja comparando classes por valores e não ponteiro de memoria
 @Override
